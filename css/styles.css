@@ -48,6 +48,12 @@ img {
 
 textarea {
   resize: none;
+  outline: none;
+}
+
+input,
+button {
+  outline: none;
 }
 
 .link {
@@ -690,6 +696,7 @@ textarea {
 }
 
 .modal-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -722,9 +729,10 @@ textarea {
 .registration-form-field:focus-within > .registration-input {
   border: 1px solid var(--accent-color);
 } */
-
-.modal-comments {
+.comments {
   margin-bottom: 20px;
+}
+.modal-comments {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 100%;
@@ -793,7 +801,6 @@ textarea {
 .modal-link {
   text-decoration-line: underline;
   color: var(--accent-color);
-  margin-left: 2px;
 }
 
 /* СТИЛИ ДЛЯ Portfolio.html */

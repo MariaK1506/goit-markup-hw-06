@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
         ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -40,7 +41,7 @@
     <main>
     <!--Герой-->
     <section class="hero">
-        <h1 class="hero-title"> Эффективные решения для вашего бизнеса </h1>
+        <h1 class="hero-title animate__animated animate__swing"> Эффективные решения для вашего бизнеса </h1>
         <button data-modal-open class="button-primary" type="button" aria-label="Заказать услугу">Заказать услугу</button>
     </section>
     <!--Особенности-->
@@ -354,39 +355,39 @@
                 </svg>
             </button>
             
-            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form">
             
                 <div class="modal-form-field">
                     <label class="modal-label" for="name">Имя</label>
                         <div class="input-wrapper">
-                            <input class="modal-input" type="text" name="name" id="name">
+                            <input class="modal-input" type="text" name="user-name" id="name">
                             <svg class="icon-modal icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-person-black"></use>
                             </svg>
                         </div>
                 </div>
                 <div class="modal-form-field">
-                    <label class="modal-label" for="user-tel">Телефон</label>
+                    <label class="modal-label" for="tel">Телефон</label>
                         <div class="input-wrapper">
-                            <input class="modal-input" type="tel" name="Телефон" id="user-tel">
+                            <input class="modal-input" type="tel" name="user-tel" id="tel">
                             <svg class="icon-modal icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-phone-black"></use>
                             </svg>
                         </div>
                 </div>
                 <div class="modal-form-field">
-                    <label class="modal-label" for="user-email">Почта</label>
+                    <label class="modal-label" for="email">Почта</label>
                         <div class="input-wrapper">
-                            <input class="modal-input" type="email" name="Почта" id="user-email">
+                            <input class="modal-input" type="email" name="user-mail" id="email">
                             <svg class="icon-modal icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-email-black"></use>
                             </svg>
                         </div>
                 </div>
-                <div class="modal-form-field">
+                <div class="modal-form-field comments">
                     <label class="modal-label">Комментарий</label>
-                        <textarea class="modal-comments" name="Комментарий" rows="5" placeholder="Введите текст"></textarea>
+                        <textarea class="modal-comments" name="comment" placeholder="Введите текст"></textarea>
                 </div>
             <div class="checkbox">
                     <label class="checkbox-label">
@@ -394,8 +395,8 @@
                         <svg class="icon-check icon" width="16" height="15">
                         <use href="./images/icons.svg#icon-check"></use>
                         </svg>
-                        Соглашаюсь с рассылкой и принимаю 
-                        <a href="" class="link modal-link">Условия договора</a>
+                        <span>Соглашаюсь с рассылкой и принимаю
+                        <a href="" class="link modal-link">Условия договора</a></span>
                     </label>
             </div>
             <button class="btn-modal-send" type="submit" aria-label="Отправить форму">Отправить</button>
